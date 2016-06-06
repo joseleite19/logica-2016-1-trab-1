@@ -430,7 +430,7 @@ int main(){
 		tree arvore(neg(s));
 
 		while(!pq.empty()){
-			auto p = pq.top(); pq.pop();
+			tree *p = pq.top(); pq.pop();
 			if(p->phi.oper != -1){ /* se pode aplicar alguma regra de inferencia */
 
 				aplicaRegradeInferencia(p);
